@@ -77,3 +77,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error(err);
   }
 });
+
+// index.js 맨 아래
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js"); // 루트 sw 래퍼
+  });
+}
