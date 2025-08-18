@@ -10,6 +10,12 @@
 - JavaScript로 동적 테이블 생성
 - 간단한 스타일링 (CSS)
 
+## 📱 PWA 지원
+
+- **홈 화면에 추가** 가능 (안드로이드 크롬 / 삼성 인터넷 브라우저 권장)
+- **오프라인 모드**에서도 기본 페이지 열람 가능
+- **Maskable 아이콘** 지원으로 다양한 기기에서 자연스러운 앱 아이콘 표시
+
 ## 🗂️ 데이터 전처리
 
 - 원본 인벤토리 데이터는 Jupyter Notebook에서 전처리했습니다.
@@ -23,8 +29,8 @@
 1. 레포지토리를 클론:
 
 ```bash
-git clone https://github.com/사용자명/레포명.git
-cd 레포명
+git clone https://github.com/alpacamale/inventory-checklist.git
+cd inventory-checklist
 ```
 
 2. 로컬에서 실행:
@@ -45,24 +51,26 @@ cd 레포명
 ```
 .
 ├── data/
-│   └── items_utf8.csv      # 전처리된 재고 데이터
+│   └── data.csv      # 로우데이터
+│   └── encoded.csv   # 인코딩된 재고 데이터
+│   └── items.csv     # 전처리된 재고 데이터
+├── icons/
+│   └── icon-192.png
+│   └── icon-512.png
+│   └── icon-maskable-512.png
 ├── src/
 │   ├── scripts/
 │   │   ├── index.js
-│   │   └── index_papaparse.js
+│   │   └── sw.js
 │   └── styles/
 │       └── style.css
-├── notebooks/
-│   └── preprocess.ipynb    # Jupyter Notebook (데이터 전처리)
+├── .gitignore
 ├── index.html
+├── manifest.webmanifest  # PWA를 위한 매니페스트
+├── note.ipynb    # Jupyter Notebook (데이터 전처리)
 └── README.md
+├── sw.js
 ```
-
-## 📱 PWA 지원
-
-- **홈 화면에 추가** 가능 (안드로이드 크롬 / 삼성 인터넷 브라우저 권장)
-- **오프라인 모드**에서도 기본 페이지 열람 가능
-- **Maskable 아이콘** 지원으로 다양한 기기에서 자연스러운 앱 아이콘 표시
 
 ## 📝 메모
 
