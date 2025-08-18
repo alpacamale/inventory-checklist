@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>재고조사표</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>재고조사표</h1>
+    </div>
+    <div id="table-container"></div>
+    <!-- <div class="table">
+      <div class="row header">
+        <div class="column">품목코드</div>
+        <div class="column">품목명</div>
+        <div class="column">단위</div>
+        <div class="column">금일재고량</div>
+      </div>
+      <div class="row">
+        <div class="column">33777</div>
+        <div class="column">냉동구운마늘 하프컷 프래시리더스(500G)</div>
+        <div class="column">개</div>
+        <div class="column"><input type="number" /></div>
+      </div>
+    </div> -->
+    <script>
+      window.CSV_URL = "data/items.csv";
+    </script>
+    <script src="src/scripts/index.js" defer></script>
+  </body>
+</html>
