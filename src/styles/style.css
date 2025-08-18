@@ -1,3 +1,17 @@
+/* 전체 페이지 당겨서 새로고침 방지 */
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: none; /* 핵심 */
+}
+
+/* 실제 스크롤은 내부 컨테이너로 */
+/* .main-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+} */
+
 .title {
   margin: 30px 0px;
   display: flex;
